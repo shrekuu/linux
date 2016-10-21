@@ -4,7 +4,7 @@ now=$(date +%m%d)
 year=$(date +%Y)
 if [ $day == $now ]
 then
-	echo "Happy borthday"
+	echo "Happy birthday"
 elif [ $day -gt $now ]
 then
 	echo $((($(date --date=$year$day +%s)-$(date +%s))/60/60/24+1))
